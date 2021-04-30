@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="#5A7CC0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:paddingBottom="30dp"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <ImageView
+            android:id="@+id/arrow_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/warrow"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:weightSum="2">
+           <TextView
+                android:id="@+id/fromEdit"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="출발지 검색"
+                android:textSize="20dp"
+                android:background="#C7D3ED"
+                android:paddingLeft="50dp">
+           </TextView>
+
+            <TextView
+                android:id="@+id/toEdit"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="도착지 검색"
+                android:textSize="20dp"
+                android:background="#C7D3ED"
+                android:paddingLeft="50dp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/path_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/wsearch"/>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:weightSum="3"
+        android:paddingLeft="120dp"
+        android:paddingRight="120dp"
+        android:background="#5A7CC0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/radio_1"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:button="@null"
+            android:background="@drawable/radio_button_1"
+          />
+
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/radio_2"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:button="@null"
+            android:background="@drawable/radio_button_2"
+            android:checked="true"
+           />
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/radio_3"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:button="@null"
+            android:background="@drawable/radio_button_3"
+ />
+
+    </RadioGroup>
+
+    <ListView
+        android:paddingTop="15dp"
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+
+<!--
+    <LinearLayout
+        android:id="@+id/tab1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:id="@+id/path_view">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>-->
+
+</LinearLayout>
